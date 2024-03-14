@@ -1,14 +1,33 @@
 {
-  "name": "esm-module",
+  "name": "mtml-utils",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build"
+    "build": "vite build && tsc"
   },
   "devDependencies": {
     "typescript": "^5.2.2",
     "vite": "^5.1.4"
+  },
+  "main": "./dist/mtml.cjs",
+  "module": "./dist/mtml.js",
+  "types": "./types",
+  "files": [
+    "dist",
+    "types"
+  ],
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./dist/mtml.js",
+        "types": "./types/mtml.d.ts"
+      },
+      "require": {
+        "default": "./dist/mtml.cjs",
+        "types": "./types/mtml.d.ts"
+      }
+    }
   }
 }

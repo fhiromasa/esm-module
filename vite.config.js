@@ -1,11 +1,15 @@
 import { defineConfig } from "vite";
-import { resolve } from "path";
 
 export default defineConfig({
   build: {
     lib: {
-      entry: resolve(__dirname, "src/lib/sample.ts"),
-      name: "sample",
+      entry: [
+        "src/data/movabletype.ts",
+        "src/data/movabletype_net.ts",
+        "src/data/powercms.ts",
+        "src/data/powercms_x.ts",
+        "src/mtml.ts",
+      ],
     },
   },
 });
