@@ -29,5 +29,9 @@
         "types": "./types/mtml.d.ts"
       }
     }
+  },
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com/fhiromasa"
   }
 }
