@@ -1,5 +1,5 @@
 {
-  "name": "mtml-utils",
+  "name": "@withmtml/mtml-utils",
   "version": "0.0.1",
   "type": "module",
   "scripts": {
@@ -29,8 +29,11 @@
       }
     }
   },
+  "repository": {
+    "url": "https://github.com/withmtml/mtml-utils/"
+  },
   "publishConfig": {
     "access": "restricted",
-    "registry": "https://npm.pkg.github.com/fhiromasa"
+    "registry": "https://npm.pkg.github.com/withmtml"
   }
 }
